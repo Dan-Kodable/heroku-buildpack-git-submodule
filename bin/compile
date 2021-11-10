@@ -41,7 +41,6 @@ cp "$ENV_DIR/GIT_SSH_KEY" ~/.ssh/id_rsa
 echo >> ~/.ssh/id_rsa
 chmod 600 ~/.ssh/id_rsa
 eval `ssh-agent -s`
-ssh-add ~/.ssh/id_rsa
 
 # ignore/hide ssh warnings
 echo "Host *" >> ~/.ssh/config
